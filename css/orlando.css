@@ -108,7 +108,8 @@ header #logotipo {
 	top: 20px;
 }
 #menu {
-	margin: 30px 100px;
+	margin: 30px 22px;
+	width: 100%;
 }
 #menu li {
 	display: inline-block;

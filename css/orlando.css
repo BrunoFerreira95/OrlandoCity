@@ -116,6 +116,11 @@ header #logotipo {
 	position: absolute;
 	top: 20px;
 	left: 0px;
+	z-index: 3;
+}
+#banner h1.efeito {
+	color: red;
+	font-size: 12em;
 }
 #menu {
 	margin: 30px 22px;
@@ -140,6 +145,10 @@ header #logotipo {
 }
 #menu li.search {
 	width: 182px;
+	transition: 1s;
+}
+#menu li.search.ativo {
+	width: 300px;
 }
 
 #menu li.search ::-webkit-input-placeholder {
@@ -153,6 +162,10 @@ header #logotipo {
 	line-height: 30px;
 	padding: 8px;
 }
+#menu li.search input .ativo {
+	width: 300px;
+}
+
 #menu a {
 	color: #FFF;
 	font-size: 16px;
@@ -171,6 +184,7 @@ header #logotipo {
 	color: #FFF;
 	position: relative;
 	top: 300px;
+	transition: 1s;
 	font-family: OpenSans-Light;
 	font-size: 92px;
 	margin-left: 50px;
@@ -191,8 +205,11 @@ header #logotipo {
 #center {
   margin: auto;
   width: 29%;
+  display: block;
   padding: 10px;
+  text-align: center;
 }
+
 #news h2 {
 	color: #5E2799;
 	font-family: OpenSans-Light;
@@ -219,6 +236,12 @@ header #logotipo {
 	color:#A7A7A7;
 	font-size: 18px;
 	font-family: 'OpenSans';
+}
+#news .thumbnails .item-inner {
+	padding: 10px;
+}
+#news .thumbnails .item-inner img {
+	width: 100%;
 }
 #estatisticas {
 	background-color: #5E299A;
@@ -408,4 +431,10 @@ footer .list-socials i {
 footer .list-socials {
 	list-style: none;
 	margin-top: 4px;
+}
+video {
+	width: 60%;
+  	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
 }
